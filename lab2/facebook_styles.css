@@ -1,0 +1,151 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 900px;
+}
+
+.left {
+    width: 50%;
+}
+
+.left h1 {
+    color: #1877f2;
+    font-size: 48px;
+}
+
+.left p {
+    font-size: 18px;
+}
+
+.right {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #1877f2;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button.create-account {
+    background-color: #42b72a;
+}
+
+a {
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    color: #1877f2;
+    text-decoration: none;
+} 
+footer {
+    background: #f0f2f5;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+    color: #606770;
+}
+
+.languages {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 0;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+.languages li {
+    display: inline;
+    padding: 0 8px;
+    position: relative;
+}
+
+.languages li:not(:last-child)::after {
+    content: "|";
+    position: absolute;
+    right: -10px;
+    color: #90949c;
+}
+
+.languages a {
+    text-decoration: none;
+    color: #606770;
+}
+
+.languages button {
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #606770;
+    cursor: pointer;
+}
+
+.footer-links ol {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #606770;
+    font-size: 12px;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    color: #606770;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
