@@ -8,7 +8,7 @@ interface Product {
   rating: number;
   link: string;
   gallery: string[];
-  selectedImage?: string; // New property to track selected image
+  selectedImage?: string; 
 }
 
 @Component({
@@ -31,7 +31,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/hfe/h17/64208876634142.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h29/h56/85584155312158.jpg?format=gallery-medium',
@@ -44,7 +44,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/hb5/h40/85584155639838.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/h51/h20/85584155770910.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/h0d/hc8/84558388887582.jpg?format=preview-large',
@@ -57,7 +57,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/hf4/h3e/84558389018654.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/hf7/h99/84558389084190.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hb2/hf9/80908428673054.png?format=gallery-medium',
@@ -70,7 +70,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/h67/hdc/80648201633822.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/h43/hef/80648201699358.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '',
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/p55/p9b/5542335.png?format=gallery-medium',
@@ -83,7 +83,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/pe4/p9a/5542339.png?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/p78/p98/5542340.png?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hcf/hd5/86002926223390.jpg?format=preview-large',
@@ -96,7 +96,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/hc1/h8f/86002926288926.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/h17/h44/86002926354462.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hed/h20/80713648570398.jpg?format=preview-large',
@@ -109,7 +109,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/h9e/h2b/80713648963614.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/hb6/h89/80713649094686.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hae/h9f/64678265716766.jpg?format=gallery-medium',
@@ -122,7 +122,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/ha4/h60/64678268665886.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/hef/hd4/64678272270366.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/hf7/h26/63968848248862.jpg?format=gallery-medium',
@@ -135,7 +135,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/hfe/hca/63968851984414.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/ha7/h97/63968854835230.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }, 
     {
       image: 'https://resources.cdn-kaspi.kz/img/m/p/he7/hb1/86887758004254.jpg?format=gallery-medium',
@@ -148,7 +148,7 @@ export class ProductsComponent {
         'https://resources.cdn-kaspi.kz/img/m/p/h60/hbc/86887758135326.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/hff/h3d/86887758200862.jpg?format=gallery-medium',
       ],
-      selectedImage: '', // Initialize with empty string
+      selectedImage: '', 
     }
   ];
 

@@ -1,8 +1,8 @@
 .products-container {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    gap: 10px; /* Space between items */
-    justify-items: center; /* Center items horizontally */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 10px; 
+    justify-items: center; 
   }
   
   .product-card {
@@ -46,8 +46,6 @@
     transform: scale(1.1);
     border-color: #007bff;
   }
-/* Social Buttons */
-/* Social Buttons */
 .social-buttons {
   display: flex;
   justify-content: center;
@@ -59,9 +57,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px; /* Space between icon and text */
-  width: auto; /* Allow button to resize based on content */
-  padding: 8px 12px; /* Add padding */
+  gap: 5px;
+  width: auto; 
+  padding: 8px 12px; 
   border-radius: 20px;
   text-decoration: none;
   color: white;
@@ -73,18 +71,12 @@
 .social-buttons a:hover {
   transform: scale(1.1);
 }
-
-/* WhatsApp Button */
 .whatsapp {
   background-color: #25d366;
 }
-
-/* Telegram Button */
 .telegram {
   background-color: #0088cc;
 }
-
-/* Kaspi Button */
 .kaspi {
   background-color: #ff4e00;
   display: flex;
