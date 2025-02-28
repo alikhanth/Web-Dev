@@ -32,6 +32,28 @@
     transition: background 0.3s;
   }
   
+  .category-item {
+    padding: 10px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
   .category-item:hover {
-    background: #ddd;
+    background: #d6d6d6;
+  }
+  
+  .selected {
+    background: #d6d6d6;
+    color: #0089d0; 
+    font-weight: bold;
+  } 
+  .like-button {
+    background: #333131;
+    color: white;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: 14px;
   }

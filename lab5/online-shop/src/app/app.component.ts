@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductListComponent } from './product-list/product-list.component';
 
@@ -19,9 +19,10 @@ interface Product {
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
+export class AppComponent  {
   categories = ['Телефон и гаджеты','Бытовая техника','Мебель', 'Красота и здоровье'];
-  selectedCategory = 'Products';
+  selectedCategory = 'Products'; 
+  
 
   likedProducts = new Set<string>();
 
@@ -85,7 +86,7 @@ export class AppComponent {
         description: 'Afkas-nova AK-37 настольный держатель для смартфона. ',
         rating: 4.1,
         link: 'https://kaspi.kz/shop/p/podstavka-afkas-nova-ak-37-chernyi-107656268/**************/',
-        likes: 3, 
+        likes: 69, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -114,7 +115,7 @@ export class AppComponent {
         description: 'Вертикальный пылесос Deerma DX115C способен в корне изменить ваше представление о сухой уборке и поможет домочадцам полюбить этот процесс.',
         rating: 4.4,
         link: 'https://kaspi.kz/shop/p/deerma-dx115c-chernyi-3701430/?c=750000000',
-        likes: 0, 
+        likes: 87, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -136,11 +137,11 @@ export class AppComponent {
       },
       {
         image: 'https://resources.cdn-kaspi.kz/img/m/p/h37/h44/87138526232606.jpg?format=gallery-medium',
-        name: 'https://resources.cdn-kaspi.kz/img/m/p/h37/h44/87138526232606.jpg?format=gallery-medium',
+        name: 'Микроволновая печь Hansa AMMF19M1SH серебристый',
         description: 'Характеристики Микроволновая печь Hansa AMMF19M1SH серебристый',
         rating: 5,
         link: 'https://kaspi.kz/shop/p/hansa-ammf19m1sh-serebristyi-123644190/?c=750000000',
-        likes: 12, 
+        likes: 128, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -169,7 +170,7 @@ export class AppComponent {
       description: 'Напольная металлическая вешалка представляет собой прочную и надёжную конструкцию, способную выдерживать значительный вес одежды.',
       rating: 4.9,
       link: 'https://kaspi.kz/shop/p/veshalka-napol-naja-izox-metall-110x150-sm-chernyi-113366378/?c=750000000',
-      likes: 0, 
+      likes: 2546, 
       gallery: [
         'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
         'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -182,7 +183,7 @@ export class AppComponent {
         description: 'Практичный  диван-кровать с легкой системой трансформации.',
         rating: 4.7,
         link: 'https://kaspi.kz/shop/p/morbido-divan-prjamoi-komfort-obivka-mikroveljur-80h210h80-sm-seryi-109382996/?c=750000000',
-        likes: 0, 
+        likes: 8, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -195,7 +196,7 @@ export class AppComponent {
         description: 'Кресло это игровое кресло, разработанное специально для обеспечения комфорта и поддержки во время длительных игровых сессий.',
         rating: 5,
         link: 'Кресло это игровое кресло, разработанное специально для обеспечения комфорта и поддержки во время длительных игровых сессий. ',
-        likes: 0, 
+        likes: 64, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -208,7 +209,7 @@ export class AppComponent {
         description: 'Характеристики Полка Полка для модема 5455, 35х20x15 см, белый',
         rating: 5,
         link: 'https://kaspi.kz/shop/p/polka-dlja-modema-5455-35h20x15-sm-belyi-116891113/?c=750000000',
-        likes: 0, 
+        likes: 25, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -236,7 +237,7 @@ export class AppComponent {
         description: 'Характеристики DETVFO Аида тональный крем DETVFO 40 мл',
         rating: 5,
         link: 'https://kaspi.kz/shop/p/detvfo-aida-tonal-nyi-krem-detvfo-40-ml-131792710/?c=750000000',
-        likes: 0, 
+        likes: 97, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -260,9 +261,9 @@ export class AppComponent {
         image: 'https://resources.cdn-kaspi.kz/img/m/p/pea/p7c/12475967.jpeg?format=gallery-medium',
         name: 'MISS TAIS Mauve карандаш коричневый №780',
         description: 'Карандаши Miss Tais  безумно мягкие, очень легко наносятся, закрашивают губки, как матовая помада, стойкие.',
-        rating: 1,
+        rating: 4,
         link: 'https://kaspi.kz/shop/p/miss-tais-mauve-karandash-korichnevyi-780-24800237/?c=750000000',
-        likes: 12, 
+        likes: 179, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -288,7 +289,7 @@ export class AppComponent {
         description: 'Разглаживающая маска на основе коллагена улучшает текстуру кожи, устраняя небольшие неровности. ',
         rating: 3,
         link: 'https://kaspi.kz/shop/p/farmstay-tkanevaja-collagen-1-sht-101076161/?c=750000000',
-        likes: 2, 
+        likes: 9, 
         gallery: [
           'https://resources.cdn-kaspi.kz/img/m/p/h35/h8f/84378448232478.jpg?format=gallery-medium',
           'https://resources.cdn-kaspi.kz/img/m/p/h3d/h8e/64208874405918.jpg?format=gallery-medium',
@@ -301,6 +302,9 @@ export class AppComponent {
 
   get currentProducts(): Product[] {
     return this.products[this.selectedCategory] || [];
+  }
+  constructor() {
+    this.loadLikesFromStorage();
   }
 
   selectCategory(category: string) {
@@ -318,7 +322,8 @@ export class AppComponent {
     } else {
       product.likes++;
       this.likedProducts.add(productName);
-    }
+    } 
+    this.saveLikesToStorage();
   }
 
   removeProduct(index: number) {
@@ -328,6 +333,23 @@ export class AppComponent {
   share(link: string) {
     const message = encodeURIComponent(`Check this product: ${link}`);
     window.open(`https://t.me/share/url?url=${link}&text=${message}`, '_blank');
+  }
+
+  saveLikesToStorage() {
+    localStorage.setItem('likedProducts', JSON.stringify(Array.from(this.likedProducts)));
+  }
+
+  loadLikesFromStorage() {
+    const storedLikes = localStorage.getItem('likedProducts');
+    if (storedLikes) {
+      this.likedProducts = new Set(JSON.parse(storedLikes));
+
+      for (const category in this.products) {
+        this.products[category].forEach(product => {
+          product.likes = this.likedProducts.has(product.name) ? 1 : 0;
+        });
+      }
+    }
   }
 
 }

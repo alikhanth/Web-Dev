@@ -1,18 +1,29 @@
 <div>
-  <h1>Online shop Kaspi</h1>
+  <h1>Online Shop Kaspi</h1>
 
   <div class="categories">
-    <div class="category-item" *ngFor="let category of categories" (click)="selectCategory(category)">
+    <div
+      class="category-item"
+      *ngFor="let category of categories"
+      [class.selected]="category === selectedCategory"
+      (click)="selectCategory(category)">
       {{ category }}
-    </div> 
-    
+    </div>
   </div>
-
+  <!-- <div *ngFor="let product of currentProducts" class="like-button">
+    <button (click)="toggleLike(product.name)">
+      {{ likedProducts.has(product.name) ? '❤️ Liked' : '🤍 Like' }}
+    </button>
+  </div> -->
+  
   <app-product-list
+    *ngIf="currentProducts?.length"
     [products]="currentProducts"
     [likedProducts]="likedProducts"
     (like)="likeProduct($event)"
     (remove)="removeProduct($event)"
     (share)="share($event)">
   </app-product-list>
+
+  <p *ngIf="!currentProducts?.length">No products available for this category.</p>
 </div>
