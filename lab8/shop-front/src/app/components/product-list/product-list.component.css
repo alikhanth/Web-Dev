@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🌟 Title Styling */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+/* 🌟 Product Card Grid */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* 🌟 Product Card Styling */
+.card {
+    width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.3s ease-in-out;
+    background: white;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌟 Product Image */
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    padding: 10px;
+}
+
+/* 🌟 Product Details */
+.card-body {
+    text-align: center;
+    padding: 15px;
+}
+
+/* 🌟 Product Name */
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Description */
+.card-text {
+    font-size: 14px;
+    color: #6c757d;
+    margin-bottom: 10px;
+}
+
+/* 🌟 Price & Rating */
+.card p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+/* 🌟 Link to Kaspi */
+.card a {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* 🌟 Button Group */
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+/* 🌟 Buttons */
+.btn {
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* ❤️ Like Button */
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* 🗑 Remove Button */
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* 🔗 Share Button */
+.btn-primary {
+    background-color: #007bff;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+} 
+
+/* 🌟 Category Filter Bar */
+.category-container {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.category-btn {
+    background: #fff;
+    border: 2px solid #007bff;
+    color: #007bff;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.category-btn:hover {
+    background: #007bff;
+    color: white;
+}
+
+.category-btn.active {
+    background: #007bff;
+    color: white;
+}

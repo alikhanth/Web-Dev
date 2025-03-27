@@ -1,0 +1,35 @@
+<h1 class="text-center fw-bold">Welcome to Shop Front</h1>
+
+<!-- Category Buttons -->
+<div class="category-container">
+  <button class="category-btn active" (click)="selectCategory('all')">All Categories</button>
+  <button *ngFor="let category of categories" 
+          class="category-btn" 
+          [attr.data-category]="category" 
+          (click)="selectCategory(category)">
+    {{ category }}
+  </button>
+</div>
+
+<!-- Product List -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-4" *ngFor="let product of filteredProducts">
+      <div class="card shadow-sm p-3 mb-4 bg-white rounded">
+        <img [src]="product.image_url" class="card-img-top" alt="{{ product.name }}">
+        <div class="card-body text-center">
+          <h5 class="card-title fw-bold">{{ product.name }}</h5>
+          <p class="card-text">{{ product.description }}</p>
+          <p><strong>Price:</strong> {{ product.price }}$</p>
+          <p><strong>Count:</strong> {{product.count}}</p>
+          <p><strong>is active:</strong> {{ product.is_active ? 'Yes' : 'No' }}</p>
+          <a [href]="product.kaspi_link" target="_blank" class="d-block mb-3 text-primary">Check on Kaspi.kz</a>
+          <div class="btn-group">
+            <button (click)="removeProduct(product.id)">Delete</button>
+            <button class="btn btn-primary">🔗 Share</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
